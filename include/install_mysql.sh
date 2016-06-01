@@ -8,4 +8,4 @@ systemctl start mysqld.service    # 启动mysql服务
 
 # 配置mysql密码
 mysql_init_password=$(grep 'temporary password' /var/log/mysqld.log | sed 's/^.*root@localhost: //g')
-mysqladmin -uroot -p$mysql_init_password password 'Aixiangfei!@#$5'
+mysqladmin -uroot -p$mysql_init_password password 'MyNewPass4!'
